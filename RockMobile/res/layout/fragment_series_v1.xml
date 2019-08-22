@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <org.church.rockmobile.widget.SegmentedGroup
+            android:id="@+id/segment_category"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <RadioButton
+                android:id="@+id/btn_series"
+                style="@style/RadioButton"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="Series" />
+
+            <RadioButton
+                android:id="@+id/btn_all"
+                style="@style/RadioButton"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="All" />
+        </org.church.rockmobile.widget.SegmentedGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_series"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_category" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            android:id="@+id/gridView_series"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="1" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/gridView_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_series"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

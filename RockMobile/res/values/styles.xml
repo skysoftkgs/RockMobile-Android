@@ -1,0 +1,39 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
+     	<item name="android:actionBarDivider">@color/black</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem" />
+    
+    <style name="RadioButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:minHeight">33dp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+    
+    <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+	    <item name="android:paddingLeft">0dp</item>
+	    <item name="android:paddingRight">0dp</item>
+	</style>   
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rock Mobile</string>
+    <string name="action_settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="server_error">Unknown server error.</string>
+    
+    <!-- Utility methods -->
+    <string name="can_not_be_empty">can\'t be empty value</string>
+        
+    <!-- Actionbar titles -->
+    <string name="groups">GROUPS</string>
+    <string name="feed">FEED</string>
+    <string name="messages">MESSAGES</string>
+    <string name="series">MESSAGES</string>
+    <string name="livestream">LIVESTREAM</string>
+    <string name="stories">STORIES</string>
+    <string name="campuses">CAMPUSES</string>
+    <string name="give">GIVE</string>
+    <string name="give_now">Give Now</string>
+       
+    <!-- Requests -->
+    <string name="no_requests">NO REQUESTS YET</string>
+    <string name="all_group_updates">All group updates and\napp notifications will\nbe displayed here</string>
+    
+    <!-- Feeds -->
+    <string name="your_feed_empty">YOUR FEED IS EMPTY</string>
+    <string name="start_exploring">Start exploring the app\nright now!</string>
+    
+    <!-- Tutorial -->
+    <string name="tutorial_go">Go!</string>
+    <string name="tutorial_skip">Skip Tutorial</string>
+    
+    <!-- Landing -->
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="signin_with_juice">Sign In with Juice ID</string>
+    <string name="guest">Guest</string>
+    
+    <!-- SignUp -->
+    <string name="signing_up">Signing up...</string>
+	<string name="user_already_exists">Username already exists.</string>
+	<string name="signup_completed_successfully">Signup completed successfully</string>
+	<string name="this_app_uses">This app uses JuiceID, which is a secure and free\n
+	    authentication system developed for the Church.</string>
+	<string name="if_you_have">If you have an existing login with JuiceID you\n
+	    can sign in using that now.</string>
+	
+	<!-- Login -->
+    <string name="logging_in">Logging in...</string>
+    <string name="confirm_your_email">Please confirm your email to reset password.</string>
+    <string name="no_found_email">No user found with email</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="wrong_username_or_password">Wrong email or password</string>
+    
+    <!-- New Group -->
+    <string name="new_group">NEW GROUP</string>
+    <string name="name">NAME</string>
+    <string name="kind">KIND</string>
+    <string name="about">ABOUT</string>
+    <string name="access">ACCESS</string>
+    <string name="private_group">Private Group</string>
+    <string name="no_group_photo">No Group Photo</string>
+    <string name="take_picture_from">Take a picture or choose from camera roll</string>
+    <string name="import_photo">Import Photo</string>
+    <string name="take_picture">Take a picture</string>
+    <string name="camera_roll">Camera roll</string>
+    <string name="move_and_pinch">Move and pinch to crop photo</string>
+    <string name="new_group_saved">New group saved successfully!</string>
+    <string name="group_changed">Group changed</string>
+    <string name="you_must_enter_description">You must enter a description of this group in order to create it.</string>
+    
+    <!-- Groups -->
+    <string name="featured">FEATURED</string>
+    <string name="categories">CATEGORIES</string>
+    <string name="no_member_of_any_group">YOU\'RE NOT A MEMBER\nOF ANY GROUP YET.</string>
+    <string name="search_and_find_group">Search and find a group now.</string>
+    
+    <!-- Group detail-->
+    <string name="group_leave_success">You left group.</string>
+    <string name="group_request_pending">Group join request is pending.</string>
+    <string name="group_request_canceled">Group join request was canceled.</string>
+    <string name="are_you_sure_delete_user">Are you sure you want to delete user?"</string>
+    <string name="are_you_sure_leave">Are you sure you want to leave this group?</string>
+    <string name="are_you_sure_clear_chat_history">Are you sure you want to clear the group\'s chat history?</string>
+    <string name="comfirm">Confirm</string>
+    
+    <!-- Group search -->
+    <string name="done">Done</string>
+    
+    <!-- no in group -->
+    <string name="group">GROUP</string>
+    <string name="group_admins">Group admins:</string>
+    
+    <!-- Group event-->
+    <string name="add_new_event">Add New Event</string>
+    <string name="new_event">NEW EVENT</string>
+    <string name="time">TIME</string>
+    <string name="date">Date</string>
+    <string name="place">PLACE</string>
+    <string name="new_event_saved">New event saved successfully!</string>
+    <string name="event_changed">Event changed successfully!</string>
+    <string name="new_event_is_pending">Adding event request is pending.</string>
+    <string name="change_event_is_pending">Changing event request is pending.</string>
+    <string name="notify_event_dialog_title">Choose notification time</string>
+    <string name="notify_10min_before">10 minutes before</string>
+    <string name="notify_30min_before">30 minutes before</string>
+    <string name="notify_1hour_before">1 hour before</string>
+    <string name="notify_1day_before">1 day before</string>
+    <string name="notify_event_message">event will be occured.</string>
+    <string name="notify_event_reminder_saved">Event reminder saved successfully.</string>
+    
+    <!-- Thread -->
+    <string name="new_thread">NEW THREAD</string>
+    <string name="add_new_thread">Add New Thread</string>
+    <string name="type_your_message">Type your message here...</string>
+    <string name="new_thread_saved">New thread saved successfully!</string>
+    <string name="thread_changed">Thread changed successfully!</string>
+    <string name="created_new_thread">created a new thread called</string>
+    
+    <!-- Group setting-->
+    <string name="users">USERS</string>
+    <string name="settings">SETTINGS</string>
+    <string name="manage_members">Manage Members</string>
+    <string name="invite_users">Invite Users</string>
+    <string name="edit_group">Edit Group</string>
+    <string name="delete_group">Delete Group</string>
+    <string name="deleted_successfully">You have been removed from this group successfully.</string>
+    <string name="clear_chat_history">Clear Chat History</string>
+    
+    <!-- Group manage members -->
+    <string name="make_admin">Make Admin</string>
+    <string name="remove_admin">Remove Admin</string>
+    <string name="remove_user">Remove User</string>
+    <string name="can_not_remove_admin">You can\'t remove admin user for this group.</string>
+    
+    <!-- Settings -->
+    <string name="copyright">Copyright © %s. San Diego Rock Church.</string>
+    <string name="profile">PROFILE</string>
+    <string name="privacy_policy">PRIVACY POLICY</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="group_notifications">GROUP NOTIFICATIONS</string>
+    <string name="user_information_saved">User information saved successfully</string>
+    <string name="privacy_policy_text">The Community App Privacy and Security Policy (\"Privacy Policy\") below are applicable to this website and others located at the communityapp.io domain and affiliated domains ("Sites") produced and maintained by Community App (collectively "Community App" or "we", "us", or "our"). We have established this Privacy Policy to let you know the kinds of personal information we may gather during your visit to the Website, why we gather your information, what we use your personal information for, when we might disclose your personal information, and how you can manage your personal information. 
+        \n\n
+        Please be advised that the practices described in this Privacy Policy apply only to information gathered through the Sites. This Privacy Policy does not necessarily reflect our practices with respect to information gathered through other off-line means.
+        \n\n
+        BY VISITING THE SITES, YOU ARE ACCEPTING, WITHOUT MODIFICATION, THIS PRIVACY POLICY. IF YOU DO NOT AGREE TO ANY PORTION OF THIS PRIVACY POLICY, THEN EXIT THE SITES IMMEDIATELY AND DO NOT RETURN. WE RESERVE THE RIGHT TO CHANGE, MODIFY, ADD, OR DELETE THE TERMS OF OUR PRIVACY POLICY FROM TIME TO TIME WITHOUT FURTHER NOTICE. YOUR CONTINUED USE OF THE SITES FOLLOWING THE POSTING OF CHANGES TO THIS PRIVACY POLICY MEAN YOU AGREE TO THE NEW TERMS. If we make material changes to this Privacy Policy, we will post the changes to this Privacy Policy on this page and will indicate at the top of this page the date these terms were last revised. If we intend to apply the modifications or amendments to this Privacy Policy retroactively, we will provide you with notice of the modifications or amendments.
+        \n\n
+        If you have any questions about this Privacy Policy or don\'t see your concerns addressed here, you should contact us at support@communityapp.io
+\n\n
+1. GENERALLY, WHAT INFORMATION ABOUT ME IS COLLECTED AND STORED?\n
+The information we collect and store depends almost entirely on how you choose to make use of the Sites and its related features and services.
+\n\n
+2. PERSONAL INFORMATION\n
+We collect and store information that you enter into the Sites. At some Community App sites, you can order products, enter contests, vote in polls or otherwise express an opinion, subscribe to one of our services such as our online newsletters, or participate in one of our online forums or communities. For example, when you register with us or place an order, we collect and store some or all of the following information that you provide: name, billing address, shipping address, email address, telephone number, credit card number and expiration date. This information is used to provide the services and products that you have ordered or requested, to process and ship orders, to send order and shipping confirmations and to provide customer service. Personal Information may also be collected in certain portions of the Sites in which you specifically and knowingly provide such information to us or to operators of subnetworks within the Sites e.g. community postings (i.e., classifieds or bulletin boards), suggestions, or other requests. Some of this information also may be used to contact you about new features, new services, sales, new products, and special offers unless you have elected to not receive such promotional communications in connection with the Sites. At other Community App sites, you can submit information about other people. For example, you might submit a person\'s name and e-mail address to send an electronic greeting card and, if you order a gift online and want it sent directly to the recipient, you might submit the recipient\'s name and address. The types of personally identifiable information that may be collected about other people at these pages include: recipient\'s name, address, e-mail address, and telephone number.
+\n\n
+At certain parts of some of our sites, only persons who provide us with the requested personally identifiable information will be able to order products, programs, and services or otherwise participate in the site\'s activities and offerings.
+\n\n
+3. ANONYMOUS INFORMATION\n
+Through your use of the Sites, we may also gather certain information that does not identify you individually ("Anonymous Information"). Generally, this information is collected through "traffic data". We collect and store certain other information automatically whenever you interact with the Sites. For example, we collect your IP address, browser information and reference site domain name every time you visit the Sites. We also collect information regarding user-traffic patterns and site usage. This information is used to analyze and improve the Sites and to provide our users with a fulfilling experience.
+\n\n
+4. COOKIES AND SPYWARE\n
+We never use or install spyware on your computer, nor do we use spyware to retrieve information from your computer. Like many websites, we use "cookies", which are files stored on your computer\'s hard drive by your browser. Cookies help us to identify account holders and to optimize their shopping experience. Cookies also allow us to hold selections in a shopping cart when a user leaves the Sites without checking out and send you reminder email about your shopping orders and other shopping opportunities. Most browsers accept cookies automatically but allow you to disable them. We recommend that you leave cookies "turned on" so that we can offer you a better user experience on the Sites. You may occasionally get Cookies from companies advertising on our behalf. We do not control these Cookies, and these Cookies are not subject to this Privacy Policy.
+\n\n
+We also may collect and store information about you that we receive from other sources, to enable us to update and correct the information contained in our database and to provide information about our service, recommendations, and special offers that we think will interest you and, if you have agreed to receive email from us, send you reminders about shopping opportunities.
+\n\n
+5. REGULAR CORRESPONDENCE\n
+After you register, we may use the email address and zip codes of all users who subscribe to any of our newsletters or other regular correspondence. Except to our third-party agents (as described below), this information is not shared with any third parties. Anyone who no longer wishes to receive this newsletter or other regular correspondence can, at any time, follow the "Unsubscribe" instructions located within each newsletter.
+\n\n
+6. KIDS AND PRIVACY\n
+We do not sell or ship any items ordered through the Sites directly to anyone who we know to be under the age of 13, nor do we collect any personal information from anyone who we know to be under the age of 13. If you are under the age of 13, you should use the Sites only under the immediate supervision of a parent or guardian and should not submit any personal information to us. Our Website is not intentionally targeted to children under the age of 13. IF YOU ARE UNDER 13, THEN IMMEDIATELY EXIT THE SITES UNLESS YOU ARE DIRECTLY SUPERVISED BY A PARENT OR OTHER LEGAL GUARDIAN.
+\n\n
+7. HOW DO WE USE YOUR INFORMATION?\n
+Except as disclosed in this Privacy Policy, we do not use or disclose information about your individual visits to the Sites or your Personal Information collected online to any companies not affiliated with us. If we propose to permit any use of your Personal Information, you will be provided an opportunity to decline such contact.
+\n\n
+7.1 Personal Information\n
+We may use your Personal Information to provide services available through the Sites, track your compliance with the Sites\' rules and regulations, or for editorial and feedback purposes (to the extent that is explained when you provide the information). In the event we plan to publicly post any of your Personal Information on the Sites (as, for instance, a letter), you will be provided prior notification of such posting and given the option to decline same.
+\n\n
+7.2 Use of Anonymous Information\n
+We use Anonymous Information to help us determine how people use parts of the Sites and who our readers are so we can improve our Website and ensure that it is as appealing as we can make it for as many people as possible. We also use Anonymous Information to provide statistical "ratings" information in aggregated form to our partners and other third parties about how our users collectively use the website. We may also use or share Anonymous Information (or other information, other than Personal Information) in any other manner that we deem appropriate or necessary.
+\n\n
+7.3 Third-Party Agents\n
+We occasionally have third-party agents, subsidiaries, affiliates and partners that perform functions on our behalf, such as marketing, analytics, credit-card processing, shipping or stocking orders, providing customer service, fraud protection, etc. These entities have access to the Personal Information needed to perform their functions and will be contractually obligated to maintain the confidentiality and security of that Personal Information. They are restricted from using, selling, distributing or altering this data in any way other than to provide the requested services to the Sites.
+\n\n
+7.4 Emergency Situations\n
+We may also use or disclose Personal Information if required to do so by law or in the good-faith belief that such action is necessary to: (a) conform to applicable law or comply with legal process served on us or the Sites; (b) protect and defend the our rights or property, the Sites or our users, and (c) act under emergency circumstances to protect the personal safety of us, our affiliates, agents, or the users of the Sites or the public.
+\n\n
+8. WHAT STEPS ARE TAKEN TO KEEP PERSONAL INFORMATION SECURE?\n
+Personal Information collected by the Sites is stored in secure operating environments that are not available to the public. In many instances, such as in the case of credit-card numbers and all on-line purchases, the Personal Information is encrypted before you conduct your transaction. Only those employees who need access to your Personal Information to do their jobs are allowed access. Any employee who violates our privacy and/or security policies is subject to disciplinary action, including possible termination and civil and/or criminal prosecution.
+\n\n
+To protect the security of your information during transmission, we use Secure Sockets Layer (SSL) software, which encrypts information you input. Most browsers will give a visual indication of when your connection is secure. For example, Internet Explorer will show a padlock icon in the lower right of the browser window. If you place an order through the Sites, you will be asked to set up an account and provide an email address and password. You must provide an appropriate email address and password in order to access account information. In order to help protect your personal information further, you should be careful about providing your password to others. If you wish to cancel your password, or if you become aware of any loss, theft or unauthorized use of your password, please contact The Community App at 619.226.ROCK (7625).
+\n\n
+While we try our best to safeguard your Personal Information once we receive it, you understand and agree that no transmission of data over the Internet or any other public network can be guaranteed to be 100% secure.
+\n\n
+9. LINKING TO OTHER SITES\n
+The Sites may contain links to other websites operated by The Community App, its affiliates, or third parties. The practices described in this Privacy Policy do not apply to information gathered through these other websites. These other sites may also send their own cookies to you, collect your data or solicit your personal information. We are not responsible for the actions and privacy policies of third parties and other websites. Be aware of when you leave the Sites and read the privacy policies of each and every website you visit.
+\n\n
+11. PUBLIC AREAS\n
+Please remember that any information you share in public areas, such as message boards or feedback sections, becomes public, and therefore this Privacy Policy does not apply to any information you choose to make public. Use common sense about what you disclose and do not post any Personal Information that you expect to keep private.
+\n\n
+12. GOVERNING LAW/ASSIGNMENT\n
+The Sites are published in the United States and intended for users from the United States. This policy shall be governed by and construed and enforced in accordance with the laws of the State of California, excluding its laws relating to conflicts of law. U.S. law shall govern in any and all disputes, including privacy or defamation issues or otherwise. Any actions pertaining to this privacy policy or website usage shall be venued in the County of Los Angeles.
+\n\n
+13. YOUR CALIFORNIA PRIVACY RIGHTS\n
+California Civil Code Section 1798.83 permits customers of The Community App who are California residents to request certain information regarding its disclosure of personal information to third parties for their direct marketing purposes. To make such a request, please send an e-mail to support@communityapp.io
+\n\n
+14. WHO DO I TALK TO IF I HAVE QUESTIONS?\n
+If you have any questions or concerns about the online privacy statement for this site or its implementation you may contact us at support@communityapp.io
+	</string>
+	<string name="about_str">The Rock Church is committed to save, equip, and send soul winners for Jesus Christ to establish pervasive hope in San Diego and around the globe. Rock Mobile 2.0 allows you to access it in the palm of your hand.\n\nWatch archived Sunday messages and read incredible stories of life transformation. Join Groups, a real-time communication tool that connects you to others in the church. And watch Sunday services LIVE as Pastor Miles McPherson shares his heart and inspires us to know God more.\n\nDon’t miss this opportunity to connect and grow, so you can be a blessing to others.</string>
+	<string name="give_str">Support what God is doing through the Rock Church. Your tithes and offering will help change lives and share the love of Jesus Christ to the world.</string>
+</resources>

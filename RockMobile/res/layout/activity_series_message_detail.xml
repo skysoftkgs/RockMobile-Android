@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topbar_height"
+            android:background="@color/white" >
+
+            <ImageButton
+                android:id="@+id/imageButton_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:src="@drawable/btn_back_selector" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/section_divider" />
+
+            <TextView
+                android:id="@+id/textView_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageButton_back"
+                android:text="MESSAGE"
+                android:textSize="@dimen/font_topbar_title"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButton_share"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:src="@drawable/btn_share" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_topbar" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black" >
+
+                    <ImageView
+                        android:id="@+id/imageView_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:visibility="invisible"
+                        android:scaleType="centerCrop" />
+
+                    <Button
+                        android:id="@+id/button_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/btn_watch_now"
+                        android:text="WATCH NOW"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp" >
+
+                    <TextView
+                        android:id="@+id/textView_part"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_recap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:background="#999999" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout13"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" >
+
+                        <Button
+                            android:id="@+id/button_listen_now"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/btn_listen_now_selector"
+                            android:text="Listen Now"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

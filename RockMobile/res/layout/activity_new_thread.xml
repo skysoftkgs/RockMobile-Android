@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg" >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/topbar_height"
+                android:background="@color/white" >
+
+                <ImageButton
+                    android:id="@+id/imageButton_close"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/btn_close_selector" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/section_divider" />
+
+                <TextView
+                    android:id="@+id/textView_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageButton_close"
+                    android:text="@string/new_thread"
+                    android:textSize="@dimen/font_topbar_title"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_pushSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/switch_thread_admin_off" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/section_height"
+                android:background="@color/white"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="Thread Name:" />
+
+                <EditText
+                    android:id="@+id/editText_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" >
+
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_messageInput"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/section_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/section_bg" >
+
+        <EditText
+            android:id="@+id/editText_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/imageButton_sendMessage"
+            android:ems="10"
+            android:hint="@string/type_your_message"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton_sendMessage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_send_message_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

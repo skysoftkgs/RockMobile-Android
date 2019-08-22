@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/org.church.rockmobile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/app_color"
+            android:gravity="center"
+            android:text="23d 12h 34m"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_feedContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/textView_time"
+            android:text="Livestream is available." />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#c0c0c0" />
+
+</LinearLayout>

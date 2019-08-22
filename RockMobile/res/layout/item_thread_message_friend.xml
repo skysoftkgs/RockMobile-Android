@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp" >
+
+    <org.church.rockmobile.widget.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView_userPhoto"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_default_user"
+        app:corner_radius="15dp" />
+
+    <TextView
+        android:id="@+id/textView_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView_userPhoto"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@+id/imageView_userPhoto"
+        android:text="TextView"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_userName"
+        android:layout_below="@+id/textView_userName"
+        android:text="TextView"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_time"
+        android:layout_below="@id/textView_time"
+        android:src="@drawable/thread_message_left_tail" />
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_time"
+        android:layout_below="@+id/textView_time"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/thread_message_white_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:text="TextView"
+        android:autoLink="web" />
+
+</RelativeLayout>

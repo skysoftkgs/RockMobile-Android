@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_color">#00abb9</color>
+    <color name="app_color_active">#062844</color>
+    <color name="red_color">#ec4141</color>
+  	<color name="transparent">#00000000</color>
+  	<color name="black">#000000</color>
+  	<color name="white">#FFFFFF</color>
+   	<color name="section_divider">#dadada</color>
+   	<color name="main_bg">#f2f1f0</color>
+
+	<!-- Custom segmented control -->
+    <color name="radio_button_selected_color">@color/black</color>
+    <color name="radio_button_unselected_color">@color/transparent</color>
+    
+	<color name="tab_selected">#181818</color>
+	<color name="tab_normal">#272727</color>
+	
+	<color name="alpha_black">#99000000</color>
+	<color name="alpha_black_light">#55000000</color>
+	
+	<color name="splash_text_color">#ADAFB4</color>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height" >
+
+        <include
+            android:id="@+id/layout_searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/searchbar" />
+
+        <RelativeLayout
+            android:id="@+id/layout_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <ImageButton
+                android:id="@+id/imageButton_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:src="@drawable/btn_back_active" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/section_divider" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageButton_back"
+                android:text="INVITE USERS"
+                android:textSize="@dimen/font_topbar_title"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButton_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:src="@drawable/btn_search_selector" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/gridView_inviteUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="1" />
+
+</LinearLayout>

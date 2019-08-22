@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/white" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/section_divider" />
+
+        <EditText
+            android:id="@+id/editText_search"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/button_done"
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/ic_search"
+            android:ems="10"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="15dp" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view1"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="@string/done" />
+    </RelativeLayout>
+
+</LinearLayout>

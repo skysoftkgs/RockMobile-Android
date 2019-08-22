@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_category"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content" >
+   	    
+   	   	<org.church.rockmobile.widget.SegmentedGroup
+   		    android:id="@+id/segment_category"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="55dp"
+   		    android:layout_centerHorizontal="true"
+   		    android:padding="10dp"
+   		    android:orientation="horizontal">
+   		
+   		    <RadioButton
+   		        android:id="@+id/btn_my_groups"
+   		        android:layout_width="130dp"
+   		        android:layout_height="match_parent"
+   		        android:text="My Groups"
+   		        android:checked="true"
+   		        style="@style/RadioButton" />
+   		
+   		    <RadioButton
+   		        android:id="@+id/btn_all"
+   		        android:layout_width="130dp"
+   		        android:layout_height="match_parent"
+   		        android:text="All"
+   		        style="@style/RadioButton" />
+   			  
+   		</org.church.rockmobile.widget.SegmentedGroup>
+   	</RelativeLayout>
+    	
+    <RelativeLayout
+        android:id="@+id/layout_myGroups"
+        android:layout_below="@+id/layout_category"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content" >
+   	   	
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+	        android:id="@+id/gridView_myGroups"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:horizontalSpacing = "1dip"
+	        android:verticalSpacing = "1dip"
+	        android:numColumns="2" />
+	    
+        <ProgressBar
+	  	    android:id="@+id/progressBar_myGroups"
+	  	    style="?android:attr/progressBarStyleLarge"
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_allGroups"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_category"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/featured" />
+
+            <org.church.rockmobile.widget.HorizontialListView
+                android:id="@+id/listView_featured"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="5dp"
+                android:background="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/categories" />
+
+            <ListView
+                android:id="@+id/listView_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_noGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_category"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/textView_searchAndFind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/search_and_find_group"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/textView_noMemberOfAnyGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_searchAndFind"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/no_member_of_any_group"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_noMemberOfAnyGroup"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView_noMemberOfAnyGroup"
+            android:src="@drawable/icon_arrow_no_group" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

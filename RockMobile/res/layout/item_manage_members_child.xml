@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_color" >
+
+        <Button
+            android:id="@+id/button_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:padding="5dp"
+            android:text="@string/make_admin"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton_adminStatus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/button_admin"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_make_admin" />
+
+        <Button
+            android:id="@+id/button_remove_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/imageButton_adminStatus"
+            android:background="@color/transparent"
+            android:padding="5dp"
+            android:text="@string/remove_user"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageView_remove_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/button_remove_user"
+            android:src="@drawable/btn_remove_user" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_imgages">
+        <item>@drawable/icon_tab_feed</item>
+        <item>@drawable/icon_tab_groups</item>
+        <item>@drawable/icon_tab_messages</item>
+        <item>@drawable/icon_tab_livestream</item>
+        <item>@drawable/icon_tab_stories</item>
+        <item>@drawable/icon_tab_campuses</item>
+        <item>@drawable/icon_tab_give</item>
+        <item>@drawable/icon_tab_settings</item>
+    </string-array>
+    
+   	<string-array name="tab_titles">
+        <item>FEED</item>
+        <item>GROUPS</item>
+        <item>MESSAGES</item>
+        <item>LIVESTREAM</item>
+        <item>STORIES</item>
+        <item>CAMPUSES</item>
+        <item>GIVE</item>
+        <item>SETTINGS</item>
+    </string-array>
+</resources>

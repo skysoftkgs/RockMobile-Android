@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="topbar_height">50dp</dimen>
+    <dimen name="actionbar_height">50dp</dimen>
+    <dimen name="section_height">50dp</dimen>
+    
+    <!-- font size -->
+	<dimen name="font_topbar_title">20dp</dimen>
+    <dimen name="font_large">20dp</dimen>
+    <dimen name="font_medium">16dp</dimen>
+    <dimen name="font_normal">14dp</dimen>
+    <dimen name="font_small">12dp</dimen>
+    
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    
+    <!-- Settings -->
+    <dimen name="settings_profile_picture_width">110dp</dimen>
+    
+    <dimen name="messages_detail_image_width_px">600px</dimen>
+    <dimen name="messages_detail_image_height_px">285px</dimen>
+</resources>

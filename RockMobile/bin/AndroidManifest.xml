@@ -1,0 +1,145 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="1.1" package="org.church.rockmobile">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21"/>
+
+    <!-- Google map connects to Internet Services. -->
+	<permission android:name="org.church.rockmobile.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+	<uses-permission android:name="org.church.rockmobile.permission.MAPS_RECEIVE"/>
+	
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="org.church.rockmobile.RockMobileApplication" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.MainActivity" android:screenOrientation="portrait">
+           	
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.landing.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.landing.TutorialActivity" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.landing.LandingActivity" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.landing.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.landing.SignupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.landing.ResetPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.NewGroupActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.CategoryGroupsActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.GroupSearchActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.GroupAboutActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.GroupDetailActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.NewEventActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.NewThreadActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.ThreadMessagesActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.GroupSettingsActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.GroupManageMembersActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.InviteUsersActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.RequestNotificationActivity" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.StoryDetailActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.SeriesMessagesActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.MessageSearchActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.SeriesMessageDetailActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.SettingsProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">    
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="org.church.rockmobile.SettingsAboutActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+       	<activity android:label="@string/app_name" android:name="org.church.rockmobile.SettingsPolicyActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+       	<activity android:label="@string/app_name" android:name="org.church.rockmobile.SettingsGroupNotificationActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+       	<activity android:label="@string/app_name" android:name="org.church.rockmobile.LiveStreamActivity" android:screenOrientation="portrait">    
+        </activity>
+        
+       	<activity android:configChanges="orientation|screenSize" android:keepScreenOn="true" android:label="@string/app_name" android:name="org.church.rockmobile.FullScreenVideoActivity" android:screenOrientation="landscape">    
+        </activity>
+                
+        <activity android:configChanges="orientation|keyboardHidden|navigation" android:launchMode="singleTop" android:name="io.vov.vitamio.activity.InitActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        
+        <receiver android:exported="false" android:name="org.church.rockmobile.RockReceiver">
+            <intent-filter>
+                <action android:name="org.church.rockmobile.PUSH_ACTION"/>
+            </intent-filter>
+        </receiver>
+       
+        <service android:name="com.parse.PushService"/>
+		<receiver android:name="com.parse.ParseBroadcastReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+				<action android:name="android.intent.action.USER_PRESENT"/>
+			</intent-filter>
+		</receiver>
+	
+		<receiver android:exported="false" android:name="org.church.rockmobile.service.AlarmReceiver">
+		    <intent-filter>
+                <action android:name="org.church.rockmobile.ALARM_RECEIVER"/>
+            </intent-filter>
+		</receiver>
+			
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyC9sPtpheoJBkRxWE7jMGXz3YyVeeaoOXE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="baf5d17acc04adbe09322ba3d5d5fa06743d1bcf"/>
+    </application>
+
+</manifest>

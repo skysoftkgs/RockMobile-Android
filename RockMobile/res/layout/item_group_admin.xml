@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" xmlns:app="http://schemas.android.com/apk/res/org.church.rockmobile">
+  
+  	<org.church.rockmobile.widget.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+  	    android:id="@+id/imageView"
+  	    android:layout_width="60dp"
+  	    android:layout_height="60dp"
+  	    android:layout_centerVertical="true"
+  	    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+  	    android:scaleType="centerCrop"
+  	    android:src="@drawable/icon_default_user"
+  	    app:corner_radius="30dp" />
+
+  	<TextView
+  	    android:id="@+id/textView_name"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_centerVertical="true"
+  	    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+  	    android:layout_toRightOf="@+id/imageView"
+  	    android:maxLines="2"
+  	    android:text="Loading..." />
+  
+</RelativeLayout>
