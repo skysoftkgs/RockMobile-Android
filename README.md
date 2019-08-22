@@ -1,2 +1,5 @@
-mobile-rockmobile-android-v2
-============================
+Android church mobile app
+
+Language:Java
+Backend:Parse.com
+
